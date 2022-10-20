@@ -6,7 +6,7 @@ services:
     container_name: v2ray_upstream
     restart: always
     ports:
-      - ${VMESS_PORT:-1310}:1310
+      - ${VMESS_PORT:-2186}:2186
     volumes:
       - ./config/:/etc/v2ray/
       - ./logs:/var/log/v2ray/
