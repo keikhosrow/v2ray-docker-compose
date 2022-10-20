@@ -7,19 +7,24 @@
   "inbounds": [
     {
       "listen": "0.0.0.0",
-      "port": 1310,
+      "port": 2168,
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
-            "id": "<UPSTREAM-UUID>",
-            "alterId": 0,
-            "security": "auto"
+            "id": "5c97c5bf-ee73-484d-9a0d-01006ba68e09",
+            "alterId": 84,
+            "security": "auto",
+            "level": 0,
+            "email":"main"
           }
         ]
       },
       "streamSettings": {
         "network": "ws"
+      },
+      "mux": {
+        "enabled": true
       }
     }
   ],
@@ -35,8 +40,8 @@
   ],
   "dns": {
     "servers": [
+      "1.1.1.1",
       "8.8.8.8",
-      "8.8.4.4",
       "localhost"
     ]
   },
